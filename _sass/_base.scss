@@ -73,6 +73,13 @@ aside {
   border-color: rgba($theme-dark, .5);
   @include sans-serif-font;
   @include transition-all;
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    .navbar-menu {
+      flex: 1;
+    }
+  }
   .navbar-header .navbar-brand {
     height: auto;
     padding: 10px;
