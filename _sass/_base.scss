@@ -74,6 +74,8 @@ aside {
   @include sans-serif-font;
   @include transition-all;
   .navbar-header .navbar-brand {
+    height: auto;
+    padding: 10px;
     color: $theme-primary;
     @include sans-serif-font;
     font-weight: 700;
@@ -81,6 +83,32 @@ aside {
     &:hover,
     &:focus {
       color: darken($theme-primary, 10%);
+    }
+    .cve-logo {
+      float: left;
+      margin-right: 10px;
+    }
+    .cve {
+      float: left;
+      font-size: 11px;
+      .c {
+        font-weight: normal;
+        margin-right: 5px;
+      }
+      .v {
+        font-weight: normal;
+      }
+      .e {
+        font-weight: bold;
+        display: block;
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 10px;
+      }
+    }
+    .tf {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
   .nav {
@@ -147,7 +175,12 @@ aside {
 }
 
 .usa-disclaimer {
+  font-size: 11px;
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #f5f5f5;
+  width: 100%;
 }
 
 // Homepage Header
